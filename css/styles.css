@@ -1,0 +1,495 @@
+/*global styling*/
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #f3f3f3;
+  color: #777777;
+  font-family: 'Times New Roman','serif';
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.3em;
+  padding-top: 7.5em !important;
+  padding: 0;
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+}
+
+/*Navigation*/
+.navbar {
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  background-image: url(../img/header-bg.png);
+  background-size: 100%;
+  object-fit: fill;
+  position: fixed;
+  left: .5em;
+  z-index: 1;
+}
+
+.navbar.collapse.navbar.show {
+  background-image: url(../img/header-bg.png);
+}
+
+nav li a:hover {
+  color: orange !important;
+  text-decoration: none;
+  transition: color 500ms ease;
+  -webkit-transition: 500ms ease;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  line-height: 12px;
+  padding-top: 1em;
+  padding-bottom: 5px;
+}
+
+.navbar-brand small{
+  display: block;
+  font-size: .5em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  color: orange !important;
+}
+
+a.navbar-brand {
+  color: white !important;
+}
+
+a.navbar-brand:hover {
+  color: orange !important;
+  text-decoration: none;
+  transition: color 500ms ease;
+  -webkit-transition: 500ms ease;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: white !important;
+}
+
+@media only screen and (min-width: 425px) {
+  .navbar {
+    position: fixed;
+    left: .7em;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    width: 70%;
+    margin: 0 auto;
+    position: fixed;
+    left: 15%;
+    z-index: 2;
+  }
+  .navbar-brand {
+    padding-left: 1em;
+  }
+}
+/* end navigation*/
+
+
+/****Home****/
+
+.carousel img {
+  display: block;
+  width: auto;
+  height: 150px;
+  max-height: 150px;
+}
+
+.carousel-indicators {
+  z-index: 0;
+}
+
+.main-home{
+  padding-bottom: 1em;
+}
+
+.main-home h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: left;;
+}
+
+.main-home p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel img {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+  }
+  .main-home {
+    padding-bottom: 1em;
+  }
+  .main-home h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+
+  }
+  .main-home p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+}
+
+/****Brokerage****/
+
+.main-brokerage {
+  padding-bottom: 1em;
+}
+
+.main-brokerage h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: center;
+}
+
+.main-brokerage p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+.main-brokerage li {
+  margin-left: .5em;
+  margin-right: .5em;
+  padding-right: .6em;
+}
+
+/* this is to create the correct jump for the anchor tags*/
+.anchor{
+  display: block;
+  height: 6em;
+  margin-top: -6em;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-brokerage {
+    padding-bottom: 1em;
+  }
+  .main-brokerage h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+    text-align: left;
+  }
+  .main-brokerage p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+  .main-brokerage ul {
+    margin-left: 3em;
+  }
+  .main-brokerage li {
+    margin-left: 1em;
+    margin-right: 2em;
+    padding-left: 1em;
+  }
+  .anchor{
+    display: block;
+    height: 11em;
+    margin-top: -11em;
+    visibility: hidden;
+  }
+}
+
+/****Health****/
+.main-health {
+  padding-bottom: 1em;
+}
+
+.main-health h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: center;
+}
+
+.main-health p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+/* this is to create the correct jump for the anchor tags*/
+.anchor{
+  display: block;
+  height: 6em;
+  margin-top: -6em;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-health {
+    padding-bottom: 1em;
+  }
+  .main-health h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+    text-align: left;
+  }
+  .main-health p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+  .anchor{
+    display: block;
+    height: 11em;
+    margin-top: -11em;
+    visibility: hidden;
+  }
+}
+
+/****Forex****/
+.main-forex {
+  padding-bottom: 1em;
+}
+
+.main-forex h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: center;
+}
+
+.main-forex h2 {
+  padding: .5em .5em 0 .5em;
+}
+
+.main-forex p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-forex {
+    padding-bottom: 1em;
+  }
+  .main-forex h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+    text-align: left;
+  }
+  .main-forex h2 {
+    margin-left: .8em;
+    padding: .4em .8em 0 .8em;
+  }
+  .main-forex p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+}
+
+/****Contact****/
+.main-contact {
+  padding-bottom: 1em;
+}
+
+.main-contact h3 {
+  padding: .5em .5em 0 .5em;
+  text-align: left;
+}
+
+.main-contact p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+#contactrow1 {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+#button {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-contact {
+    padding-bottom: 1em;
+  }
+  .main-contact h3 {
+    padding: .8em .8em 0 .1em;
+    text-align: left;
+  }
+  .main-contact p {
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: .8em .8em 0 .1em;
+  }
+  #form {
+    padding-top: 1.5em;
+  }
+}
+
+/****thank you****/
+.thank-you {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.3em;
+  padding-top: 7.5em !important;
+  padding-bottom: 1em;
+  padding: 0;
+  background-color: white;
+}
+
+.main-thankyou {
+  padding-bottom: 1em;
+}
+
+.main-thankyou p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-thankyou {
+    padding-bottom: 1em;
+  }
+  .main-thankyou p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .thank-you {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+}
+
+/****Terms****/
+.main-terms {
+  padding-bottom: 1em;
+}
+
+.main-terms h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: center;
+}
+
+.main-terms p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-terms {
+    padding-bottom: 1em;
+  }
+  .main-terms h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+    text-align: left;
+  }
+  .main-terms p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+}
+
+/****Disclaimer****/
+.main-disclaimer {
+  padding-bottom: 1em;
+}
+
+.main-disclaimer h1 {
+  padding: .5em .5em 0 .5em;
+  text-align: center;
+}
+
+.main-disclaimer p {
+  margin: 1em;
+  padding: .5em .5em 0 .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-disclaimer {
+    padding-bottom: 1em;
+  }
+  .main-disclaimer h1 {
+    margin-left: .4em;
+    padding: .8em .8em 0 .8em;
+    text-align: left;
+  }
+  .main-disclaimer p {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .8em .8em 0 .8em;
+  }
+}
+
+/****Footer****/
+.footer-section {
+  width: 95%;
+  margin: 0 auto;
+  height: 2.1em;
+  color: white;
+  background-color: black;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  margin-bottom: 1em !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-section p {
+  padding-right: 0.5em;
+  padding-top: 0.1em;
+}
+
+.footer-section small {
+  padding-right: .5em;
+  vertical-align: middle;
+  line-height: 2.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer-section p {
+    padding-right: 1em;
+  }
+  .footer-section small {
+    padding-right: 1em;
+    vertical-align: middle;
+    line-height: 2.5em;
+  }
+}
